@@ -7,6 +7,7 @@
     tools:context=".ui.loops.LoopsFragment">
 
     <GridView
+        android:padding="15dp"
         android:id="@+id/lv_music"
         android:horizontalSpacing="6dp"
         android:numColumns="2"

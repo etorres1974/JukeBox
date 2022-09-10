@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
+
+
     <TextView
         android:id="@+id/text_home"
         android:layout_width="match_parent"
@@ -15,8 +17,27 @@
         android:layout_marginEnd="8dp"
         android:textAlignment="center"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/home_title"
+        />
+
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@id/text_home"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/jukebox"
+        />
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feito por Eduardo Torres e Lucca Diniz"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Sounds.SoundsFragment">
+    tools:context=".ui.Sounds.SoundsFragment"
+    android:padding="15dp"
+    >
 
     <Spinner
         android:id="@+id/spinner_instrument"
@@ -12,9 +14,11 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="10dp"
         />
 
     <ListView
+        android:layout_margin="10dp"
         android:id="@+id/list_view_instrument"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

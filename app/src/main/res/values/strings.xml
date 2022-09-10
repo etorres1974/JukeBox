@@ -5,6 +5,7 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_songs">Loops</string>
     <string name="title_notes">Sounds</string>
+    <string name="home_title">Bem vindo Ao Jukebox app, o menu Loops contem musicas longas para serem usadas como batida base e o menu Sounds contem audios curtos para mixagem. Divitar-se!</string>
 
     <string-array name="instruments_array">
         <item>Voice</item>
