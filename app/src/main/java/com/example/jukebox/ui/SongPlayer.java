@@ -15,15 +15,6 @@ public class SongPlayer {
         this.context = context;
     }
 
-    @NotNull
-    public final MediaPlayer getPlayer() {
-        return this.player;
-    }
-
-    public final void setPlayer(@NotNull MediaPlayer var1) {
-        this.player = var1;
-    }
-
     public final void playSong(int resource) {
         MediaPlayer mp = MediaPlayer.create(this.context, resource);
         this.player = mp;

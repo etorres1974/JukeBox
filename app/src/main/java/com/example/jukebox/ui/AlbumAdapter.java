@@ -64,11 +64,6 @@ public class AlbumAdapter extends BaseAdapter {
 
     }
 
-    @NotNull
-    public final Album getInstrument() {
-        return this.instrument;
-    }
-
     public AlbumAdapter(@NotNull Album instrument) {
         super();
         this.instrument = instrument;

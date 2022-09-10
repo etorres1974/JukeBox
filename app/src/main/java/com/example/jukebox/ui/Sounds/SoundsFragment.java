@@ -83,5 +83,3 @@ public class SoundsFragment extends Fragment implements AdapterView.OnItemSelect
        return  Arrays.asList(getResources().getStringArray(R.array.instruments_array));
     }
 }
-
-//[]
