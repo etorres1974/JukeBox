@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_notes"
-        android:name="com.example.jukebox.ui.notifications.SoundsFragment"
+        android:name="com.example.jukebox.ui.Sounds.SoundsFragment"
         android:label="@string/title_notes"
         tools:layout="@layout/fragment_sounds" />
 </navigation>

@@ -17,15 +17,13 @@ public class DataSource {
     private Sound bass = new Sound("Bass", R.drawable.ic_drum, R.raw.bass);
     private Sound bell = new Sound("Bell", R.drawable.ic_bell, R.raw.bell);
 
-    public List<Album>  getLoops() {
-        List<Album> lista = new ArrayList<>();
+    public Album  getLoops() {
         List<Sound> musicas = new ArrayList<>();
         musicas.add(jazz);
         musicas.add(hipHop);
         musicas.add(space);
         musicas.add(think);
-        lista.add( new Album("loops", musicas));
-        return lista;
+        return new Album("loops", musicas);
     }
 
     public List<Album> getInstruments() {
