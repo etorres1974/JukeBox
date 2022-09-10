@@ -1,5 +1,6 @@
 package com.example.jukebox.ui;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -45,17 +46,20 @@ public class AlbumAdapter extends BaseAdapter {
         return (View)var8;
     }
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     private final void setupView(final Sound sound, SongItemBinding binding, final Context context) {
         if (sound != null) {
             binding.cardView.setOnClickListener((View.OnClickListener)(new View.OnClickListener() {
-                public final void onClick(View it) {
+                public void onClick(View it) {
                     if (context != null) {
                         (new SongPlayer(context)).playSong(sound.getAudio());
                     }
-
                 }
             }));
-            binding.imageView.setImageDrawable(context != null ? context.getDrawable(sound.getImage()) : null);
+            if(context != null){
+                binding.imageView.setImageDrawable(context.getDrawable(sound.getImage()));
+                binding.tvTitle.setText(sound.getName());
+            }
         }
 
     }
