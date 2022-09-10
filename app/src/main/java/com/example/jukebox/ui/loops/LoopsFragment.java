@@ -35,6 +35,7 @@ public class LoopsFragment extends Fragment {
     private void setupListView(){
         ListAdapter adapter = new AlbumAdapter(data.getLoops());
         binding.lvMusic.setAdapter(adapter);
+
     }
 
     @Override

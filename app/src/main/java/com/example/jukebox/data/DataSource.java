@@ -8,10 +8,10 @@ import java.util.List;
 
 public class DataSource {
 
-    private Sound jazz = new Sound("Jazz", R.drawable.ic_launcher_foreground, R.raw.jazz);
-    private Sound hipHop = new Sound ("HipHop", R.drawable.ic_launcher_foreground, R.raw.beat);
-    private Sound space = new Sound ("Space", R.drawable.ic_launcher_foreground, R.raw.space);
-    private Sound think = new Sound ("Think", R.drawable.ic_launcher_foreground, R.raw.think);
+    private Sound jazz = new Sound("Jazz", R.drawable.jazz, R.raw.jazz);
+    private Sound hipHop = new Sound ("HipHop", R.drawable.hip_hop, R.raw.beat);
+    private Sound space = new Sound ("Space", R.drawable.space, R.raw.space);
+    private Sound think = new Sound ("Think", R.drawable.think, R.raw.think);
 
     private Sound yeah = new Sound("Yeah", R.drawable.ic_dj, R.raw.ah_yeah);
     private Sound bass = new Sound("Bass", R.drawable.ic_drum, R.raw.bass);
