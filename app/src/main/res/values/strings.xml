@@ -5,4 +5,10 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_songs">Loops</string>
     <string name="title_notes">Sounds</string>
+
+    <string-array name="instruments_array">
+        <item>Voice</item>
+        <item>Instruments</item>
+        <item>Objects</item>
+    </string-array>
 </resources>
