@@ -4,7 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/ic_baseline_library_music_24.xml" value="0.1595" />
+        <entry key="app/src/main/res/drawable/ic_baseline_music_note_24.xml" value="0.1595" />
+        <entry key="app/src/main/res/drawable/ic_bell.xml" value="0.1595" />
         <entry key="app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1595" />
+        <entry key="app/src/main/res/drawable/ic_dj.xml" value="0.1595" />
+        <entry key="app/src/main/res/drawable/ic_drum.xml" value="0.1595" />
+        <entry key="app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1595" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1595" />
       </map>
     </option>
   </component>

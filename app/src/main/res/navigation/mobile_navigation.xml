@@ -12,14 +12,14 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.jukebox.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_songs"
+        android:name="com.example.jukebox.ui.loops.LoopsFragment"
+        android:label="@string/title_songs"
+        tools:layout="@layout/fragment_sounds" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.jukebox.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_notes"
+        android:name="com.example.jukebox.ui.notifications.SoundsFragment"
+        android:label="@string/title_notes"
+        tools:layout="@layout/fragment_sounds" />
 </navigation>
