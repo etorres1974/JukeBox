@@ -17,10 +17,15 @@ import com.example.jukebox.data.DataSource;
 import com.example.jukebox.databinding.FragmentSoundsBinding;
 import com.example.jukebox.ui.AlbumAdapter;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.Objects;
+
 public class SoundsFragment extends Fragment implements AdapterView.OnItemSelectedListener {
 
     private FragmentSoundsBinding binding;
     private DataSource data = new DataSource();
+    private List<Album> albuns = data.getInstruments();
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentSoundsBinding.inflate(inflater, container, false);
@@ -41,7 +46,7 @@ public class SoundsFragment extends Fragment implements AdapterView.OnItemSelect
         );
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         binding.spinnerInstrument.setAdapter(adapter);
-        data.getInstruments();
+        binding.spinnerInstrument.setOnItemSelectedListener(this);
     }
 
     private void setupListView(Album album){
@@ -56,13 +61,27 @@ public class SoundsFragment extends Fragment implements AdapterView.OnItemSelect
     }
 
     @Override
-    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-        Album album = data.getLoops(); // TODO get Instrument
-        setupListView(album);
+    public void onItemSelected(AdapterView<?> adapterView, View view, int pos, long l) {
+        List<String> lista = instruments();
+        String selected = lista.get(pos);
+        Album album = null;
+        for(int i = 0; i < lista.size(); i++ ){
+            if(Objects.equals(selected, albuns.get(i).getName())){
+                album = albuns.get(i);
+            }
+        }
+        if(album != null)
+            setupListView(album);
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
         //TODO
     }
+
+    public List<String> instruments() {
+       return  Arrays.asList(getResources().getStringArray(R.array.instruments_array));
+    }
 }
+
+//[]
